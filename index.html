@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <head>
 	<style type="text/css">
+		@media(min-width: 800px)
+		{
+			body{
+
+			}
+		}
+		*{
+			margin: 0;
+			box-sizing: border-box;
+			padding: 0;
+		}
+		#img-div{
+			display: flex;
+			justify-content: space-around;
+			margin-top: 100px;
+		}
+		#img-one{
+			max-width: 50px;
+			max-height: 50px;
+		}
+		#img-two{
+			max-width: 50px;
+			max-height: 50px;
+		}
+		#img-three{
+			max-width: 50px;
+			max-height: 50px;
+		}
+		#img-desc{
+			display: flex;
+			justify-content: space-around;
+		}
+		#header{
+			position: fixed;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			background-color: #eee;
+			min-height: 60px;
+			top: 0;
+			padding: 0px 20px;
+			width: 100%;
+		}
 		#header-img{
-			height: auto;
+			height: 100%;
+			width: 100%;
+			max-width: 100px;
+			margin-left: 20px;
+		}
+		main{
+			margin-top: 90px;
 		}
 	</style>
 </head>
 <body>
 	<header id="header">
-		<img src="https://www.pngfind.com/pngs/m/181-1815969_abstract-png-transparent-images-abstract-design-transparent-background.png" id="header-img" alt="Company logo">
+		<img src="https://i.pinimg.com/originals/ed/3b/ee/ed3beefd69c83e86241a31c001dd2f1a.png" id="header-img" alt="Company logo">
 		<nav id="nav-bar">
 			<a href="#" class="nav-link">Features</a>
 			<a href="#" class="nav-link">Video</a>
@@ -16,6 +65,22 @@
 		</nav>
 	</header>
 	<main>
+		<div id="img-div">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" id="img-one" alt="Company logo">
+			<img src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg" id="img-two" alt="Company logo">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1000px-Apple_logo_black.svg.png" id="img-three" alt="Company logo">
+		</div>
+		<div id="img-desc">
+			<ul>
+				<li>instagram</li>
+				<li>follow your friends!</li>
+				<li>post pictures</li>
+				<li>lots of great filters</li>
+				<li>explore other profiles</li>
+			</ul>
+			<p>lion logo</p>
+			<p>apple logo</p>
+		</div>
 		<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/JzS96auqau0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 		</iframe>
 
