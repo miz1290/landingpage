@@ -1,48 +1,78 @@
 <!DOCTYPE html>
 <head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
 	<style type="text/css">
-		@media(min-width: 800px)
-		{
-			body{
 
-			}
-		}
+
 		*{
 			margin: 0;
 			box-sizing: border-box;
 			padding: 0;
 		}
+		#main{
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: space-between;
+			margin-top: 90px;
+			background-color: #eee;
+		}
 		#img-div{
 			display: flex;
 			justify-content: space-around;
 			margin-top: 100px;
+
 		}
 		#img-one{
-			max-width: 50px;
-			max-height: 50px;
+			max-width: 100px;
+			max-height: 100px;
+			padding-bottom: 25px;
 		}
 		#img-two{
-			max-width: 50px;
-			max-height: 50px;
+			max-width: 160;
+			max-height: 100px;
+			padding-bottom: 20px;
 		}
 		#img-three{
-			max-width: 50px;
-			max-height: 50px;
+			max-width: 100px;
+			max-height: 100px;
+			padding-bottom: 25px;
 		}
 		#img-desc{
 			display: flex;
 			justify-content: space-around;
+			background-color: #9eefff;
+			padding-top: 50px;
+			padding-bottom: 50px; 
+			margin-right: 100px;
+			margin-left: 100px;
+			font-family: 'Grandstander', cursive;
+			color: #616161;
+			text-shadow: 2px 2px #eee;
+			box-shadow: 5px 10px #ffdea8;
+		}
+
+		@media(max-width: 800px)
+		{
+			#main{
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: space-between;
+			margin-top: 90px;
+			background-color: #9eefff;
+			}
 		}
 		#header{
 			position: fixed;
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
-			background-color: #eee;
+			background-color: #9eefff;
 			min-height: 60px;
 			top: 0;
 			padding: 0px 20px;
 			width: 100%;
+			box-shadow: 5px 10px #ffdea8;
 		}
 		#header-img{
 			height: 100%;
@@ -50,21 +80,61 @@
 			max-width: 100px;
 			margin-left: 20px;
 		}
-		main{
-			margin-top: 90px;
+		#vid-div{
+			padding-top: 50px;
+			align-self: center;
 		}
+		#form{
+			align-self: center;
+			padding-top: 50px;
+			padding-bottom: 20px;
+			font-family: 'Grandstander';
+			font-style: bold italic;
+		}
+		#company{
+			display: flex;
+		}
+		#company-name{
+			align-self: center;
+			font-family: "Sofia";
+			font-style: italic;
+			font-variant: small-caps;
+		}
+		#nav-bar{
+			font-family: Impact;
+		}
+		#submit{
+			background-color: #ffdea8;
+			color: #616161;
+			font-size: 20px;
+			padding: 14px 40px;
+			border: none;
+			border-radius: 12px;
+			box-shadow: 5px 10px #9eefff;
+			margin-left: 20px;
+		}
+		#email{
+			background-color: #ffdea8;
+			margin-left: 10px;
+		}
+		a:visited{text-decoration: none; color: black;}
+		a:hover{text-decoration: blink; color: #ffdea8;}
+
 	</style>
 </head>
 <body>
 	<header id="header">
-		<img src="https://i.pinimg.com/originals/ed/3b/ee/ed3beefd69c83e86241a31c001dd2f1a.png" id="header-img" alt="Company logo">
+		<div id="company">
+			<img src="https://i.pinimg.com/originals/ed/3b/ee/ed3beefd69c83e86241a31c001dd2f1a.png" id="header-img" alt="Company logo">
+			<h1 id="company-name">Cat Company</h1>
+		</div>
 		<nav id="nav-bar">
-			<a href="#" class="nav-link">Features</a>
-			<a href="#" class="nav-link">Video</a>
-			<a href="#" class="nav-link">Pricing</a>
+			<a href="#img-one" class="nav-link">Features</a>
+			<a href="#vid-div" class="nav-link">Video</a>
+			<a href="#email" class="nav-link">Email</a>
 		</nav>
 	</header>
-	<main>
+	<main id="main">
 		<div id="img-div">
 			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" id="img-one" alt="Company logo">
 			<img src="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg" id="img-two" alt="Company logo">
@@ -73,20 +143,33 @@
 		<div id="img-desc">
 			<ul>
 				<li>instagram</li>
-				<li>follow your friends!</li>
+				<li>follow your friends</li>
 				<li>post pictures</li>
 				<li>lots of great filters</li>
 				<li>explore other profiles</li>
 			</ul>
-			<p>lion logo</p>
-			<p>apple logo</p>
+			<ul>
+				<li>lions</li>
+				<li>generic logo</li>
+				<li>rawrs in the jungle</li>
+				<li>i've actually never seen a lion in the jungle</li>
+				<li>lion king is a great movie</li>
+			</ul>
+			<ul>
+				<li>apple</li>
+				<li>iEverything</li>
+				<li>macs are cool but i prefer windows</li>
+				<li>lots of suite support</li>
+				<li>devs love em</li>
+			</ul>
 		</div>
+		<div id="vid-div">
 		<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/JzS96auqau0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 		</iframe>
-
-		<form id="form">
-			<label>Email:<input type="email" name="email" id="email"></label>
-			<input type="submit" name="submit" id="submit" formaction="https://www.freecodecamp.com/email-submit">
+		</div>
+		<form id="form" action="https://www.freecodecamp.com/email-submit">
+			<label>Email:<input type="email" name="email" id="email" placeholder="Enter your email here"></label>
+			<input type="submit" name="submit" id="submit">
 		</form>
 	</main>
 </body>
